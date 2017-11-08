@@ -1,3 +1,14 @@
+---
+title: 强化vim
+date: 2017-11-08 23:29:08
+categories:
+- PHP
+tags:
+- vim
+- plugin
+- Vundle
+---
+
 - 用Vundle 来管理我们的vim插件，以便动态的管理
 
   git ：https://github.com/VundleVim/Vundle.vim 
