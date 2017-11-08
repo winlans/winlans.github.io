@@ -2,7 +2,7 @@
 title: 强化vim
 date: 2017-11-08 23:29:08
 categories:
-- PHP
+- vim
 tags:
 - vim
 - plugin
