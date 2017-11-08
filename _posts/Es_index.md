@@ -1,0 +1,105 @@
+### 创建索引
+
+> es的默认配置是不需要我们手动配置索引的(如果我们索引数据到一个不存在的索引上面，es会自动的创建该索引。)。但是，为了控制例如，索引的分片数，副本数。。。等等，我们还是需要手动进行配置的。
+
+#### 关闭es默认创建索引
+
+通过再config/elasticsearch.yml 的每个节点下面添加下面的配置项，来关闭自动创建索引。
+
+`action.auto_create_index: false`
+
+#### 配置索引
+
+es的索引模板大概是这个样子的
+
+```json
+PUT /my_index       // 使用put方法，创建一个名为my_index 的索引      
+{
+    "settings": { ... any settings ... },    //具体的配置项
+ 
+  	"mappings": {  //mappings里面可以配置多个类型，当我们搜索时，我们可以同时指定索引与类型
+        "type_one": { ... any mappings ... },
+        "type_two": { ... any mappings ... },
+        ...
+    }
+}
+```
+
+> es 使用REST api 来与用户进行交互，用http的四种方法，来进行创建、删除、更新、获取。
+>
+> put - 创建		delete - 删除		post - 更新		get - 获取  
+
+- my_index 创建的索引名字
+- settings  里面包含了我们的具体配置，分片数，分析器，副本数等等。。。
+- mappings： 里面可以**同时包含多个类型 **，es的存储架构是  **索引/类型/文档 **， 当我们搜索时我们可以**指定具体的类型，进行精确搜索 **，但这并不是必须的，当我们不能确定文档再哪个类型中的时候，我们只指定索引就可以了。
+- 具体的配置，后面慢慢说。
+
+#### 删除索引
+
+- 具体删除
+
+  `CURL -DELETE /my_index`
+
+- 删除多个
+
+  `CURL -DELETE /index_one, index_two`
+
+- 通配符删除, 以`index_` 开头的索引
+
+  `CURL -DELETE /index_*` 
+
+- 删除全部索引
+
+  `CURL -DELETE /_all`  or `CURL -DELETE /*`
+
+#### 查看索引
+
+`curl -XGET 'localhost:9200/index_name?pretty'`
+
+> pretty 表示美化输出，更易于查看
+
+`curl -XGET 'localhost:9200/index_name/options?pretty'`
+
+> options 包括 `_settings`, `mappings`, `_aliases` 
+
+##### 索引是否存在
+
+`curl -XHEAD 'localhost:9200/index_name?pretty'` 判断指定的索引是存在
+
+```http
+// 不存在
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=UTF-8
+content-length: 512
+```
+
+
+
+#### 配置索引
+
+``` json
+curl -XPUT 'localhost:9200/my_temp_index?pretty' -H 'Content-Type: application/json' -d'
+{
+    "settings": {
+        "number_of_shards" :   1,
+        "number_of_replicas" : 0
+    }
+}
+'
+```
+
+- 创建索引的时候指定配置
+
+- `number_of_shards`  分片的数量，索引建立之后不可更改，除非删除重建
+
+- `number_of_replicas` 副本的数量，可以通过`rest api` 动态修改
+
+  ```json
+  curl -XPUT 'localhost:9200/my_temp_index/_settings?pretty' -H 'Content-Type: application/json' -d'
+  {
+      "number_of_replicas": 1
+  }
+  '
+  ```
+
+
