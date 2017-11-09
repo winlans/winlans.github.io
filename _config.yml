@@ -281,14 +281,14 @@ sidebar:
 
 
 # Blog rolls
-#links_title: Links
-#links_layout: block
+links_title: Links
+links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  Title: http://example.com/
 
 # 友情链接
-site.friends:
+friends:
   Will: https://www.blockbi.com
 
 # ---------------------------------------------------------------
@@ -608,7 +608,7 @@ three_waves: false
 canvas_lines: false
 
 # canvas_sphere
-canvas_sphere: true
+canvas_sphere: false
 
 # Only fit scheme Pisces
 # Canvas-ribbon
