@@ -21,3 +21,14 @@
   </a>
 </div>
 {% endif %}
+
+{% if site.friends %}
+<div class="theme-info">
+  {% for friend in site.friends%}
+  {% assign nickname = friend[0]%}
+  {% assign link = friend[1]%}
+  <a class="theme-link" href="{{ link }}">
+    {{nickname}}
+  </a>
+</div>
+{% endif %}

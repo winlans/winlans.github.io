@@ -287,6 +287,9 @@ sidebar:
 #links:
   #Title: http://example.com/
 
+# 友情链接
+site.friends:
+  Will: https://www.blockbi.com
 
 # ---------------------------------------------------------------
 # Post Settings
