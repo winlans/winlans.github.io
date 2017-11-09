@@ -295,8 +295,8 @@ sidebar:
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
-# Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+# Automatically saving scroll position on each post/page in cookies.  保存阅读进度
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -596,7 +596,7 @@ pace: true
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
 three_waves: false
@@ -605,7 +605,7 @@ three_waves: false
 canvas_lines: false
 
 # canvas_sphere
-canvas_sphere: false
+canvas_sphere: true
 
 # Only fit scheme Pisces
 # Canvas-ribbon
