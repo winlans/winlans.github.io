@@ -22,9 +22,9 @@
 </div>
 {% endif %}
 
-{% if site.friends %}
+{% if friends %}
 <div class="theme-info">
-  {% for friend in site.friends%}
+  {% for friend in friends%}
   {% assign nickname = friend[0]%}
   {% assign link = friend[1]%}
   <a class="theme-link" href="{{ link }}">
