@@ -281,15 +281,11 @@ sidebar:
 
 
 # Blog rolls
-links_title: Links
+links_title: 友情链接
 links_layout: block
 #links_layout: inline
 links:
-  Title: http://example.com/
-
-# 友情链接
-friends:
-  Will: https://www.blockbi.com
+  Will: https://kongoole.github.io/
 
 # ---------------------------------------------------------------
 # Post Settings

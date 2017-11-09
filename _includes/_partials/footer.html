@@ -22,14 +22,3 @@
 </div>
 {% endif %}
 
-{% if friends %}
-<div class="theme-info">
-  {% for friend in friends%}
-  {% assign nickname = friend[0]%}
-  {% assign link = friend[1]%}
-  <a class="theme-link" href="{{ link }}">
-    {{nickname}}
-  </a>
-  {% endfor %}
-</div>
-{% endif %}
