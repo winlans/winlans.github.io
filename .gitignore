@@ -12,3 +12,5 @@ Thumbs.db
 *.lock
 
 .idea/*
+
+_post/.idea/*
