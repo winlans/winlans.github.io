@@ -13,9 +13,7 @@ tags:
 
 
 
-![mongoClient](../assets/images/postImages/mongoClient.png)
-
-
+![](http://ww1.sinaimg.cn/large/9adc532agy1fm08kw6msnj20tw06lt90.jpg)
 
 ```php
 <?php
