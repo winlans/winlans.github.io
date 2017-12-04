@@ -5,7 +5,6 @@ categories:
 - framework
 tags:
 - symfony
-- request
 ---
 
 ##### 要与用户进行交互，请求与响应是必要的，也是必须的。这篇主要是介绍symfony如何接受用户的请求。

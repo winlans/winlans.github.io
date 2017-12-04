@@ -2,9 +2,9 @@
 title: Es_mappings
 date: 2017-11-09 14:42:00
 categories:
-- es_mappings
+- elastic
 tags:
-- es
+- elastic
 description: 主要是一些基础的es_mappings 知识
 ---
 

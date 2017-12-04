@@ -5,8 +5,6 @@ categories:
 - vim
 tags:
 - vim
-- plugin
-- Vundle
 ---
 
 用Vundle 来管理我们的vim插件，以便动态的管理, git ：https://github.com/VundleVim/Vundle.vim ，将下面的内容写入到 .vimrc 中，可以注释掉不需要的插件。

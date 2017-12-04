@@ -2,7 +2,7 @@
 title: ElasticSearch
 date: 2017-11-08 15:45:20
 category: 
-- ES
+- elastic
 tags:
 - elastic
 description: 主要介绍一些es的坑坑

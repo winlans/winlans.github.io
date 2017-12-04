@@ -4,7 +4,7 @@ date: 2017-12-04 18:00:00
 categories:
 - php
 tags:
-- file
+- fileType
 ---
 
 服务器类软件，类似Apache, Nginx，在我们通过`Multipart/form-data` 上传文件的时候，是通过上传信息中的`content-Type`  来识别的，所以如果我们能自定义的话，也能绕过服务器的文件检测了，但是这个好像并没有什么意义。 简书上有篇文章已经很详细了，就不重复写了。附上链接[简书LEE](http://www.jianshu.com/p/e810d1799384)
