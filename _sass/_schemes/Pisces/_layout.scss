@@ -74,7 +74,8 @@
   }
   @include mobile() {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+    /*padding: 20px;*/
     min-height: auto;
     border-radius: initial;
   }
