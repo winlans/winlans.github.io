@@ -7,15 +7,15 @@ tags:
 - other
 ---
 
-之前安装php imagick扩展的时候，死活装不上，最后被逼在linux下装了，但是今天一试居然撞上了。哈哈哈
+之前安装php imagick扩展的时候，死活装不上，最后被逼在linux下装了，但是今天一试居然装上了。特写此文，以为纪念，嘿嘿嘿。。。。
 
 #### 下载扩展
 
-从php的pecl库下载imagick扩展，要对应上自己的 php version， ts or nts , x86 or x64 。确定好就可以下载了，我下载的是`php_imagick-3.4.3-5.6-ts-vc11-x64`  。 下载传送门 [php-imagick](https://pecl.php.net/package/imagick)
+从php的pecl库下载imagick扩展，要对应上自己的` php version， ts or nts , x86 or x64 `。确定好就可以下载了，我下载的是`php_imagick-3.4.3-5.6-ts-vc11-x64`  。 下载传送门 [php-imagick](https://pecl.php.net/package/imagick)
 
 ![imagick-1](/assets/images/postImages/imagick-1.png)
 
-点击图中 1位置，我们可以查看这个版本扩展的详情，里面会有如下的介绍
+点击图中 1位置，我们可以查看这个版本扩展的详情，里面会有如下的介绍，2是下载源码包，3是下载windows下的扩展
 
 ![imagick-2](/assets/images/postImages/imagick-2.png)
 
