@@ -23,7 +23,11 @@ tags:
 
 下载好对应的扩展之后，解压出来，按下图的位置放好， 以CORE_开头的放在php的根目录下，php_imagick.*放在php的扩展目录下。
 
+
+
 ![imagick-3](/assets/images/postImages/imagick-3.png)
+
+
 
 ![imagick-4](/assets/images/postImages/imagick-4.png)
 
