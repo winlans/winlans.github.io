@@ -4,7 +4,7 @@ date: 2017-12-12 12:00:00
 categories:
 - php
 tags:
-- other
+- php_ext
 ---
 
 之前安装php imagick扩展的时候，死活装不上，最后被逼在linux下装了，但是今天一试居然装上了。特写此文，以为纪念，嘿嘿嘿。。。。
