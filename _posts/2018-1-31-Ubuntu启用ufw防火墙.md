@@ -10,37 +10,30 @@ date: 2018-1-31 14:00:00
 ### 安装
 
 - 判断是否安装了ufw
-
   `sudo dpkg --get-selections | grep ufw`,
 
 - 安装
-
   `sudo apt-get install ufw`
 
 - 查看运行状态
-
   `sudo ufw status`
 
 ### 使用
 
 - 启动
-
   > 默认的规则是禁止一切外部连接，允许所有外出连接。（  **包括你登陆的ssh**， 但是启动之后， 当前的连接是不会断掉的， 但是如果你 **没有将ssh添加允许的规则的话， 你就会登陆不进去**了。）
 
   `sudo ufw enable`
 
 - 禁止使用
-
   `sudo ufw disable`
 
 ### 管理
 
 - 查看设置的规则列表
-
   `sudo ufw status verbose`,  `sudo ufw status numbered`  列出序号，方便精确删除
 
 - 添加规则
-
   > 有关子网掩码看[这里](https://baike.baidu.com/item/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81)
   >
   > allow 默认是in , 如果想端口可以出站， 要指定out
@@ -83,11 +76,9 @@ date: 2018-1-31 14:00:00
   ```
 
 - 重载配置
-
   `sudo ufw reload`
 
 - 重置规则
-
   > 这将会把ufw的规则重置到初始状态， 但是已经设定的规则， 默认在执行的时候会被保存到配置文件目录(`/etc/ufw`)下面
 
   `sudo ufw reset` 
@@ -96,6 +87,6 @@ date: 2018-1-31 14:00:00
 
   参考信息：
 
-  ​	1, [Linux实用工具总结之UFW](http://notes.maxwi.com/2017/01/19/linux-command-tools-ufw/)	
+  ​	1. [Linux实用工具总结之UFW](http://notes.maxwi.com/2017/01/19/linux-command-tools-ufw/)	
 
-  ​	2, [简单ufw](https://linux.cn/article-2489-1.html)
+  ​	2. [简单ufw](https://linux.cn/article-2489-1.html)

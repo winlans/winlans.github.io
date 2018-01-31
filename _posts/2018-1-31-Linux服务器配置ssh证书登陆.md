@@ -55,8 +55,6 @@ Subsystem sftp /usr/local/ssh/libexec/sftp-server
 #AuthorizedKeysFile %h/.ssh/authorized_keys, 在每个用户名下创建这个文件。将公钥放入
 ```
 
-
-
 #### 附加
 
 - 创建组， 并添加组内用户
@@ -73,23 +71,16 @@ Subsystem sftp /usr/local/ssh/libexec/sftp-server
   cat user_id_rsa.pub >> authorized_keys
   ```
 
-  ​
-
 - ssh登陆
-
   `ssh -i /path/to/private_key/id_rsa luser1@<ssh_server_ip>`
 
 - 生成证书
-
   - Linux  `ssh-keygen`, 一路回车就好了， 然后`cd ~/.ssh`， 去查看生成的证书， 并将**id_rsa.pub**给服务器管理员
   - windows , 借用gitbash我们也可以使用`ssh-keygen`, 这个命令， 基本与上面相同
-
-
 
 ### 验证成功之后
 
 成功之后， 就可以直接关闭密码登陆了。
-
 如果是使用gitbash登陆的话， 为了方便登陆， 而不是每次输入指令，可以设置一个别名(alias),
 
 ```shell
@@ -97,4 +88,3 @@ Subsystem sftp /usr/local/ssh/libexec/sftp-server
  # 等号两边不要有空格， 然后就可以使用 raye， 直接登陆服务器了。
  alias raye='ssh -i ~/.ssh/id_rsa raye@192.168.1.148'
 ```
-
