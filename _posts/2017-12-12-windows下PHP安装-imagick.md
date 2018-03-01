@@ -39,12 +39,16 @@ tags:
 
 imagick 扩展必须配合imagick软件才能使用，下载传送门[imagick.exe](http://www.imagemagick.org/script/download.php#windows)
 
+
+
 根据第二张图选择合适的版本，下载，我下载的是`ImageMagick-7.0.7-15-Q8-x64-dll.exe`
 
 安装的时候不要将添加环境变量的选项打掉，不然你还要自己去添加。
 
 安装完之后，重启web服务器，浏览phpinfo，查看是否安装完成。
 
+![imagick-5](/assets/images/postImages/imagick-5.png)
 
+如果上图中标识的字段值为空的话，你会遇到`nodecodeDelegateForThisImageFormat` 这种错误， 需要按照[这里](https://ourcodeworld.com/articles/read/349/how-to-install-and-enable-the-imagick-extension-in-xampp-for-windows)说的这么做， 完成之后， 继续下面的操作。
 
 就这么些，但是估计如果运气不好，可能还是装不上。。。。。。
