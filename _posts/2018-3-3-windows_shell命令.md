@@ -7,9 +7,9 @@ tags:
 - shell
 ---
 
-
-
 windows下的shell是出了名的难用， 但是没办法， gui除了mac就是windows，Linux的图形操作还是不太友好。因此， 为了方便windows下的常用命令我们还是需要了解一些的。
+
+<!-- more -->
 
 # 查看帮助
 
