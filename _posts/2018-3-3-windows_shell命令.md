@@ -38,6 +38,7 @@ ps: 还是linux的`man`好用
 # 文件操作
 
 > 支持通配符 *
+
 - 移动 `move origin dest`
 - 复制 `xcopy`
 - 删除文件夹所有内容 `del /f /s /q  dir_name` -> `rm -rf dir_name`
