@@ -16,6 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 $request = Request::createFromGlobals();
 ```
+
 我们就可能拿到一个request对象，并且在任何地方都可使用，通过查看symfony的入口文件，我们发现，symfony在入口处，就获取到了request对象，并传入内核的处理机制中。
 ```php
 <?php
@@ -32,15 +33,12 @@ $response = $kernel->handle($request);
 $response->send();
 $kernel->terminate($request, $response);
 ```
+
 2. request 对象中包含了什么，怎么获取呢
   为了查看request中包含了什么，我们可以点击` Request::createFromGlobals();`
   通过函数的注释，以及代码我们可以很直白的看到，**request对象中包含了一系列超全局数组中的数据，并将超全局数组中的数据封装到request的属性中**
 ```php
-/**
-     * Creates a new request with values from PHP's super globals.
-     *用php的超全局数组中的值，创建一个request对象
-     * @return static
-     */
+     // 用php的超全局数组中的值，创建一个request对象
     public static function createFromGlobals()
     {
         // With the php's bug #66606, the php's built-in web server
@@ -68,6 +66,7 @@ $kernel->terminate($request, $response);
         return $request;
     }
 ```
+
 通过继续深究源代码，我们可以了解symfony整个获取request对象的过程，这个就不深究了，我们看看request对象是如何使用的
 
 3. request对象的具体使用
@@ -82,7 +81,9 @@ $kernel->terminate($request, $response);
     server: [ServerBag](http://api.symfony.com/2.7/Symfony/Component/HttpFoundation/ServerBag.html);
     headers: [HeaderBag](http://api.symfony.com/2.7/Symfony/Component/HttpFoundation/HeaderBag.html).
     当然，为了区分记住用户，seesion信息，也是必要的，可以通过request对象的`$request->getSession()`来获取到seesion的对象，`getSession()`也具有很多方法，这里就不详细介绍了。
+
 4. 返回指定头部信息
    可以使用request对象中headers属性，headers属性中的set()方法可以让我们返回指定的头部信息。
+   
 5. 设置cookie
   `$response->headers->setCookie(new \Symfony\Component\HttpFoundation\Cookie('session_id','test'));`
