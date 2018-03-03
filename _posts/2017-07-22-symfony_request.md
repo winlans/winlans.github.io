@@ -11,6 +11,7 @@ tags:
 
 1. 获取request 对象
   symfony 通过httpFoundation组件来实现用户请求的接收，通过
+
 ```php
 use Symfony\Component\HttpFoundation\Request;
 
@@ -18,6 +19,7 @@ $request = Request::createFromGlobals();
 ```
 
 我们就可能拿到一个request对象，并且在任何地方都可使用，通过查看symfony的入口文件，我们发现，symfony在入口处，就获取到了request对象，并传入内核的处理机制中。
+
 ```php
 <?php
 
@@ -37,6 +39,7 @@ $kernel->terminate($request, $response);
 2. request 对象中包含了什么，怎么获取呢
   为了查看request中包含了什么，我们可以点击` Request::createFromGlobals();`
   通过函数的注释，以及代码我们可以很直白的看到，**request对象中包含了一系列超全局数组中的数据，并将超全局数组中的数据封装到request的属性中**
+
 ```php
      // 用php的超全局数组中的值，创建一个request对象
     public static function createFromGlobals()
@@ -84,6 +87,6 @@ $kernel->terminate($request, $response);
 
 4. 返回指定头部信息
    可以使用request对象中headers属性，headers属性中的set()方法可以让我们返回指定的头部信息。
-   
+
 5. 设置cookie
   `$response->headers->setCookie(new \Symfony\Component\HttpFoundation\Cookie('session_id','test'));`
