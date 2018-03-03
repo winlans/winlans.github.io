@@ -1,5 +1,5 @@
 ---
-title: windows 下常用的shell命令
+title: windows_下常用的shell命令
 date: 2018-3-3 11:00:00
 categories:
 - shell
@@ -7,9 +7,9 @@ tags:
 - shell
 ---
 
+
+
 windows下的shell是出了名的难用， 但是没办法， gui除了mac就是windows，Linux的图形操作还是不太友好。因此， 为了方便windows下的常用命令我们还是需要了解一些的。
-
-
 
 # 查看帮助
 
@@ -29,7 +29,7 @@ ps: 还是linux的`man`好用
   2. more 与Linux的`more`相同
 - 搜索字符串
   > 类似Linux的`grep` window有`findstr`
-通过管道符筛选输出内容  `| findstr "search_txt"` , 具体使用查看帮助 `findstr /?`
+  > 通过管道符筛选输出内容  `| findstr "search_txt"` , 具体使用查看帮助 `findstr /?`
 
 - 快速想添加字符串到文本末尾
   `echo "some text" >> /path/to/file`
@@ -63,7 +63,7 @@ ps: 还是linux的`man`好用
 # 计划任务
 
 > 类似Linux的crontab， 不过显然没有crontab好用
-at 具体使用`/?` 查看帮助
+> at 具体使用`/?` 查看帮助
 
 # 其他
 
