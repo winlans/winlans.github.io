@@ -7,13 +7,11 @@ tags:
 - mongo
 ---
 
-
-
 旧有的`MongodbClient`类已经被废弃了，现在PHP 连接mongo的时候使用新的`MongoDB\Driver\Manager`  来创建，下面是随便简单的封装了一个类，用来增删改查，只是实现了简单了，复杂的还是看文档比较靠谱:smile:
 
+<!-- more -->
 
-
-![](http://ww1.sinaimg.cn/large/9adc532agy1fm08kw6msnj20tw06lt90.jpg)
+![test](http://ww1.sinaimg.cn/large/9adc532agy1fm08kw6msnj20tw06lt90.jpg)
 
 ```php
 <?php
@@ -114,4 +112,3 @@ class MongodbManage {
 
 }
 ```
-

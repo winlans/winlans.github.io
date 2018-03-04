@@ -9,6 +9,8 @@ tags:
 
 要与用户进行交互,请求与响应是必要的，也是必须的。这篇主要是介绍symfony如何接受用户的请求。
 
+<!-- more -->
+
 1. 获取request 对象
   symfony 通过httpFoundation组件来实现用户请求的接收，通过
 

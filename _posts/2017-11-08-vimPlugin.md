@@ -7,7 +7,9 @@ tags:
 - vim
 ---
 
-用Vundle 来管理我们的vim插件，以便动态的管理, git ：https://github.com/VundleVim/Vundle.vim ，将下面的内容写入到 .vimrc 中，可以注释掉不需要的插件。
+用Vundle 来管理我们的vim插件，以便动态的管理, `git:https://github.com/VundleVim/Vundle.vim` ，将下面的内容写入到 .vimrc 中，可以注释掉不需要的插件。
+
+<!-- more -->
 
 ```bash
 set nocompatible              " be iMproved, required
@@ -58,7 +60,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 ```
-- 安装插件， 进入vim ， 进入底行命令模式 ，执行`:PluginInstall` 
+
+- 安装插件， 进入vim ， 进入底行命令模式 ，执行`:PluginInstall`
 
 - 更新插件，执行`:PluginUpdate`
 
@@ -66,7 +69,7 @@ filetype plugin indent on    " required
 
 - 查看帮助 ， 执行 `:h vundle`
 
-#### 一些插件
+# 一些插件
 
 - YouCompleteMe 一个自动不全插件，但是悲哀的不支持php，传送门
 
@@ -93,7 +96,7 @@ filetype plugin indent on    " required
 
 - ianva/vim-youdao-translater  有道翻译插件  ,传送门`https://github.com/ianva/vim-youdao-translater`
 
-- `https://github.com/fatih/vim-go `
+- `https://github.com/fatih/vim-go`
 
 - `https://github.com/scrooloose/nerdtree`   文件管理器
 

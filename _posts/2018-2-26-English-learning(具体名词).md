@@ -7,9 +7,13 @@ tags:
 - dict
 ---
 
-### 有关物
+没事学习学习英语
 
-#### 时间相关
+# 有关物
+
+## 时间相关
+
+<!-- more -->
 
 1. time
 2. morning
@@ -40,7 +44,7 @@ tags:
 27. schedule
 28. age
 
-#### 气候相关
+## 气候相关
 
 1. weather
 2. rain
@@ -48,7 +52,7 @@ tags:
 4. wind
 5. cloud
 
-#### 自然相关
+## 自然相关
 
 1. nature
 2. mountain
@@ -68,14 +72,14 @@ tags:
 16. stone
 17. star
 
-#### 植物类
+## 植物类
 
 1. plant
 2. grass
 3. tree
 4. crop
 
-#### 动物类
+## 动物类
 
 1. animal
 2. bird
@@ -97,18 +101,18 @@ tags:
 18. snake
 19. reptile
 
-#### 昆虫类
+## 昆虫类
 
 1. insect
 2. bee
 3. butterfly
 4. spider
 
-#### 其他生物相关
+## 其他生物相关
 
 1. bacteria
 
-#### 地点类
+## 地点类
 
 1. place
 2. hospital
@@ -129,20 +133,20 @@ tags:
 17. village
 18. city
 
-#### 机构相关
+## 机构相关
 
 1. organization
 2. company
 3. charity
 
-#### 声音相关
+## 声音相关
 
 1. sound
 2. voice
 3. noise
 4. music
 
-#### 食品类
+## 食品类
 
 1. food
 2. egg
@@ -158,14 +162,14 @@ tags:
 12. chocolate
 13. sauce
 
-#### 餐饮类
+## 餐饮类
 
 1. meal
 2. breakfast
 3. lunch
 4. dinner
 
-#### 蔬菜类
+## 蔬菜类
 
 1. vegetable
 2. potato
@@ -174,14 +178,14 @@ tags:
 5. lettuce
 6. bean
 
-#### 水果类
+## 水果类
 
 1. fruit
 2. apple
 3. orange
 4. banana
 
-#### 食材相关
+## 食材相关
 
 1. ingredient
 2. oil
@@ -190,7 +194,7 @@ tags:
 5. butter
 6. cream
 
-#### 饮料相关
+## 饮料相关
 
 1. drink
 2. coffee
@@ -201,21 +205,21 @@ tags:
 7. wine
 8. alcohol
 
-#### 营养类
+## 营养类
 
 1. nutrient
 2. mineral
 3. vitamin
 4. protein
 
-#### 疾病
+## 疾病
 
 1. disease
 2. fever
 3. flu
 4. cancer
 
-#### 房屋类
+## 房屋类
 
 1. house
 2. office
@@ -227,7 +231,7 @@ tags:
 8. roof
 9. kitchen
 
-#### 家具类
+## 家具类
 
 1. fruniture
 2. bed
@@ -237,7 +241,7 @@ tags:
 6. seat
 7. couch
 
-#### 服装
+## 服装
 
 1. clothes
 2. shirt
@@ -256,16 +260,15 @@ tags:
 15. zip
 16. sock
 
-#### 首饰类
+## 首饰类
 
 1. jewelry
 2. diamond
 3. ring
 
-#### 化妆品
+## 化妆品
 
 1. cosmetics
 2. perfume
 3. lipstick
 4. powder
-

@@ -11,6 +11,8 @@ tags:
 >
 > 常用的Linux下的防火墙的软件是iptables， 但是iptables的设置规则比较复杂， 因此ubuntu在此之上封装形成了ufw
 
+<!-- more -->
+
 # 安装
 
 - 判断是否安装了ufw

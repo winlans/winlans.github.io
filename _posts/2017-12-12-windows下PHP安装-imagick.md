@@ -9,9 +9,11 @@ tags:
 
 之前安装php imagick扩展的时候，死活装不上，最后被逼在linux下装了，但是今天一试居然装上了。特写此文，以为纪念，嘿嘿嘿。。。。
 
-#### 下载扩展
+<!-- more -->
 
-从php的pecl库下载imagick扩展，要对应上自己的` php version， ts or nts , x86 or x64 `。确定好就可以下载了，我下载的是`php_imagick-3.4.3-5.6-ts-vc11-x64`  。 下载传送门 [php-imagick](https://pecl.php.net/package/imagick)
+# 下载扩展
+
+从php的pecl库下载imagick扩展，要对应上自己的`php version， ts or nts , x86 or x64`。确定好就可以下载了，我下载的是`php_imagick-3.4.3-5.6-ts-vc11-x64`  。 下载传送门 [php-imagick](https://pecl.php.net/package/imagick)
 
 ![imagick-1](/assets/images/postImages/imagick-1.png)
 
@@ -23,23 +25,15 @@ tags:
 
 下载好对应的扩展之后，解压出来，按下图的位置放好， 以CORE_开头的放在php的根目录下，php_imagick.*放在php的扩展目录下。
 
-
-
 ![imagick-3](/assets/images/postImages/imagick-3.png)
-
-
 
 ![imagick-4](/assets/images/postImages/imagick-4.png)
 
 打开php.ini, 添加`extension=php_imagick.dll`
 
-
-
-#### 安装imagick软件
+# 安装imagick软件
 
 imagick 扩展必须配合imagick软件才能使用，下载传送门[imagick.exe](http://www.imagemagick.org/script/download.php#windows)
-
-
 
 根据第二张图选择合适的版本，下载，我下载的是`ImageMagick-7.0.7-15-Q8-x64-dll.exe`
 
