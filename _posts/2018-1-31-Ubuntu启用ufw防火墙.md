@@ -11,7 +11,9 @@ tags:
 >
 > 常用的Linux下的防火墙的软件是iptables， 但是iptables的设置规则比较复杂， 因此ubuntu在此之上封装形成了ufw
 
-### 安装
+<!-- more -->
+
+# 安装
 
 - 判断是否安装了ufw
   `sudo dpkg --get-selections | grep ufw`,
@@ -22,7 +24,7 @@ tags:
 - 查看运行状态
   `sudo ufw status`
 
-### 使用
+# 使用
 
 - 启动
   > 默认的规则是禁止一切外部连接，允许所有外出连接。（  **包括你登陆的ssh**， 但是启动之后， 当前的连接是不会断掉的， 但是如果你 **没有将ssh添加允许的规则的话， 你就会登陆不进去**了。）
@@ -32,7 +34,7 @@ tags:
 - 禁止使用
   `sudo ufw disable`
 
-### 管理
+# 管理
 
 - 查看设置的规则列表
   `sudo ufw status verbose`,  `sudo ufw status numbered`  列出序号，方便精确删除
@@ -46,10 +48,10 @@ tags:
   #指定端口
   sudo ufw allow 22
   # 指定端口允许的协议 tcp || udp
-  sudo ufw allow 22/tcp   
+  sudo ufw allow 22/tcp
 
   # 开放指定范围的端口, 这时候必须指定允许的协议
-  sudo ufw allow 2000:2100/tcp 
+  sudo ufw allow 2000:2100/tcp
 
   # 对指定ip开放所有端口
   sudo ufw allow from 192.168.0.104
@@ -79,18 +81,17 @@ tags:
   sudo ufw delete allow 22
   ```
 
-- 重载配置
-  `sudo ufw reload`
+- 重载配置 `sudo ufw reload`
 
 - 重置规则
   > 这将会把ufw的规则重置到初始状态， 但是已经设定的规则， 默认在执行的时候会被保存到配置文件目录(`/etc/ufw`)下面
 
-  `sudo ufw reset` 
+  `sudo ufw reset`
 
-### 参考
+# 参考
 
   参考信息：
 
-  ​	1. [Linux实用工具总结之UFW](http://notes.maxwi.com/2017/01/19/linux-command-tools-ufw/)	
+  1. [Linux实用工具总结之UFW](http://notes.maxwi.com/2017/01/19/linux-command-tools-ufw/)
 
-  ​	2. [简单ufw](https://linux.cn/article-2489-1.html)
+  2. [简单ufw](https://linux.cn/article-2489-1.html)

@@ -7,27 +7,27 @@ tags:
 - sshd_config
 ---
 
-
-
 > 使用证书登陆有助于保护服务器的安全， 配置好之后， 一定要先测试下， 然后关闭密码登陆， 要是自己都进不去了， 就尴尬了。
 
 参考文章 [ssh-证书登陆](http://www.linuxidc.com/Linux/2015-12/126648.htm)
 
-### ssh服务器配置
+<!-- more -->
 
-#### 修改sshd配置文件
+# ssh服务器配置
 
-> 配置文件默认存放在`/etc/ssh/sshd_config	`, 如果找不到可以使用`whereis ssh` , 来查找与ssh相关的目录， 使用 `vi /etc/ssh/sshd_config` 来编辑此文件
+## 修改sshd配置文件
+
+> 配置文件默认存放在`/etc/ssh/sshd_config`, 如果找不到可以使用`whereis ssh` , 来查找与ssh相关的目录， 使用 `vi /etc/ssh/sshd_config` 来编辑此文件
 
 ```shell
 Port 22  # 默认值22， 建议自定义
 Protocol # //默认值2， 不建议1
 PermitRootLogin no # 禁止使用root账户通过ssh登陆
 PermitEmptyPasswords no # 禁止使用空密码登陆， 默认no
-#AllowUsers user1 user2 
+#AllowUsers user1 user2
 AllowGroups ssh-group  #允许ssh登陆的用户或者组，建议使用组， 方便管理
 
-#不让 sshd 去检查用户目录或某些重要档案的权限数据，这是为了防止用户将某些重要档案的权限设错。例如用户的 ~.ssh/ 权限设错时，某些特殊情况下会不许用户登录。 
+#不让 sshd 去检查用户目录或某些重要档案的权限数据，这是为了防止用户将某些重要档案的权限设错。例如用户的 ~.ssh/ 权限设错时，某些特殊情况下会不许用户登录。
 StrictModes no  # 默认yes
 
 #允许用户自行使用成对的密钥系统登录服务器，这里仅针对协议版本 2。用户自己生成的公钥数据就放置于相应的（服务器上该用户自己的）用户目录（例如，/home/luser1）下的 .ssh/authorized_keys 文件里面，
@@ -55,14 +55,14 @@ Subsystem sftp /usr/local/ssh/libexec/sftp-server
 #AuthorizedKeysFile %h/.ssh/authorized_keys, 在每个用户名下创建这个文件。将公钥放入
 ```
 
-#### 附加
+## 附加
 
 - 创建组， 并添加组内用户
 
-  ```
+```shell
   # groupadd ssh-group
   # usermod -a -G ssh-group <username>
-  ```
+```
 
 - 给用户添加public-key
 
