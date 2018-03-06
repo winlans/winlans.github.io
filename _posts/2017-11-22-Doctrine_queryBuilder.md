@@ -49,8 +49,20 @@ $qu = $qb->select('u')
     ->andWhere($qb->expr()->eq('u.logNum', '1'))
     ->andWhere($qb->expr()->eq('u.profileId', 9178))
     ->where($qb->expr()->eq('u.id', 177))
+    ->where($qb->expr()->eq('u.name', $qb->expr()->literal($name)))  // 字符串要使用literal修饰
     ->getQuery();
 
 $res = $qu->getArrayResult();
 var_dump($res);exit;
+```
+
+# join语句
+
+```php
+   $qb->select('u.work_name, ui.city')
+            ->from(User::class, 'u')
+            ->leftJoin(UserInfo::class, 'ui', Join::LEFT_JOIN, $expr->eq('u.id', 'ui.uid'))
+            ->orderBy('u.id', 'desc')->setMaxResults(10);
+
+        return $qb->getQuery()->getScalarResult();
 ```
