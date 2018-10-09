@@ -1,5 +1,5 @@
 ---
-title: using xdebug
+title: CI框架session不断重新创建的问题
 date: 2018-10-09 12:00:00
 categories:
 - php
@@ -8,6 +8,7 @@ tags:
 ---
 
 | 程序| 版本|
+|---|---|
 |PHP|7.2 |
 |CI| 3.0|
 
